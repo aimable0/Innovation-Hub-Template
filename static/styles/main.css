@@ -1,3 +1,4 @@
+@import "@fortawesome/fontawesome-free/css/all.min.css";
 /* all */
 body {
     font-family: "Open Sans", sans-serif;
@@ -47,36 +48,60 @@ span {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 15px 0px;
+    padding: 10px 0px;
     background-color: transparent; /* Initially transparent */
     transition: background-color 0.3s ease-in-out;
     z-index: 10000;
 }
+.menu-content {
+    width: 100%;
+}
+
 .main-menu-wrap  {
+    display: flex;
+    justify-content: space-between;
+}
+.main-menu {
+    width: 80%;
     display: flex;
 }
 .main-menu ul {
     display: flex;
-
 }
 .site-logo {
     display: flex;
     align-items: center;
 }
-
+.nav-icon {
+    flex-grow: 1;
+    justify-content: end;
+}
+.nav-icon li .header-icons a{
+    padding: 0px 15px;
+}
 .main-menu ul li {
-    padding: 10px;
     list-style-type: none;
+    padding: 0px 20px;
 }
 .main-menu ul li a {
     color: white;
     font-size: 14.5px;
 }
-
+.main-menu ul li a:hover {
+    color: rgb(4, 150, 4);
+}
 a {
     text-decoration: none;
     color: black;
     font-weight: 600;
+}
+p {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: 0.1px;
+    line-height: 1.8;
+    color: #051922;
 }
 /* background */
 .hero-area {
@@ -89,7 +114,8 @@ a {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 1000px;
+    background-attachment: fixed; /* fixing the background*/
+    height: 1300px;
 }
 
 /* background overlay */
@@ -108,12 +134,15 @@ a {
     position: relative;
     z-index: 1;
     width: 100%;
-    height: 800px;
+    height: 1300px;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+.hero-text {
+    z-index: 9999;
 }
 .hero-text h1 {
     font-size: 64px;
@@ -122,7 +151,7 @@ a {
     color: white;
 }
 .hero-text p.subtitle {
-    color: #5ba515;
+    color: white;
     font-weight: 700;
     font-size: 15px;
     letter-spacing: 6px;
@@ -130,7 +159,8 @@ a {
 }
 .boxed-btn {
     display: inline-block;
-    background-color: #5ba515;
+    /* background-color: #5ba515; */
+    background-color: green;
     color: white;
     padding: 10px 20px;
     font-weight: 500;
@@ -138,7 +168,8 @@ a {
 }
 .bordered-btn {
     display: inline-block;
-    border: 2px solid #5ba515;
+    /* border: 2px solid #5ba515; */
+    border: 2px solid green;
     color: white;
     padding: 8px 20px;
     font-weight: 500;
@@ -148,37 +179,85 @@ a {
 /* services */
 .services {
     background-color: #f5f5f5;
-    padding: 20px 0px;
-
+    padding: 80px 0px;
 }
 .service-display {
     width: 100%;
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 .service {
+    width: 100%;
+    display: flex;
     flex-grow: 1;
+    align-items: center; /* algining icons along vertical axis*/
 }
-
+.service-content {
+    margin-left: 15px;
+}
+.service-content h4 {
+    text-align: left;
+    margin-bottom: 0px;
+}
+.service-content p {
+    color: #051922;
+    margin-bottom: 0px;
+    margin-top: 1px;
+    font-size: 14px;
+    letter-spacing: 0.3px;
+    opacity: 0.75;
+}
 
 /* our products */
 .section-title > h3 {
     font-size: 40px;
+    font-weight: 600;
 }
 .product-section-1 {
     text-align: center;
     padding: 100px 50px;
 }
 .product-block {
-    flex-grow: 1;
+    /* flex-grow: 1; */
     display: flex;
     border-radius: 8px;
     border: 1px solid rgb(255, 255, 255);
     box-shadow: 0px 4px 12px rgba(75, 90, 113, 0.5);
-    margin: 0px 10px;
+    margin: 10px 5px;
+    padding: 0px 0px 40px 0px;
+    flex-wrap: wrap;
 }
 .product-image img {
     width: 300px;
+    height: 300px;
+    padding: 5px;
+    border-radius: 8px;
+}
+.product-item {
+    width: 100%;
+    text-align: center;
+}
+.product-item p {
+    margin: 0px auto;
+}
+.product-item h3 {
+    margin-bottom: 5px;
+}
+.product-item > a{
+    font-weight: 500;
+    font-size: 13px;
+    border: 1px solid #5ba515;
+    background-color: #5ba515;
+    color: white;
+    padding: 10px 10px;
+    letter-spacing: 0.6px;
+    border-radius: 50px;
+}
+.product-price {
+    font-size: 25px;
+    font-weight: 700;
+    padding-bottom: 10px;
 }
 .show-more {
     padding: 20px;
@@ -197,7 +276,13 @@ a {
 .featured-category {
     flex-grow: 1;
     background-color: #f5f5f5;
-    height: 500px;
+    padding: 200px 10px;
+}
+.made-from-block h3 {
+    font-weight: 500;
+}
+#made-of-header {
+    font-weight: 600;
 }
 .category {
     border: 5px solid #5ba515;
@@ -267,32 +352,54 @@ a {
 .news-letter {
     flex-grow: 1;
     background-color: #f5f5f5;
-    height: 400px;
+    padding: 150px 0px;
+}
+.news-letter-head {
+    width: 100%;
+    text-align: center;
 }
 .news-letter-head h3 {
     font-size: 45px;
     padding-top: 20px;
     padding-bottom: 20px;
 }
+.subscribe-form {
+    margin: 0px auto;
+    width: 60%;
+}
+form {
+    display: flex;
+    border-radius: 50px;
+    border: 0.5px solid #5ba515;
+    width: 100%;
+    justify-content: space-between;
+}
 #email-field {
     font-family: 'Poppins';
-    width: 100%;
+    font-size: 18px;
+    outline: none;
+    border: 0;
+    background-color: #f5f5f5;
+    margin-left: 25px;
+    width: 70%;
+}
+#submit-button {
+    font-family: 'Poppins';
     font-size: 20px;
+    outline: none;
+    border-radius: 50px;
+    border: 0;
+    color: white;
+    background-color: #5ba515;
+    padding: 10px 30px;
+}
+/* #email-field {
+
     padding: 15px 50px;
     border-radius: 50px;
     margin-bottom: 40px;
     border-color: #5ba515;
-    outline: none;
-}
 
-#submit-button {
-    font-size: 20px;
-    width: 50%;
-    border-radius: 50px;
-    padding: 10px 15px;
-    border: 0;
-    color: white;
-    background-color: #5ba515;
 }
 
 
@@ -304,12 +411,21 @@ a {
     color: lightgray;
     padding-top: 150px;
 }
+.main-footer p {
+    color: grey;
+}
 .footer-heading {
     color:white;
     font-weight: 500;
 }
 .footer-section {
     flex-grow: 1;
+}
+.footer-section ul {
+    padding-left: 0;
+}
+.footer-section p {
+    color: lightgray;
 }
 .footer-section ul li{
     list-style: none;
@@ -333,12 +449,17 @@ a {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    border-top: 1px solid rgba(128, 128, 128, 0.515);
+    padding-top: 15px;
+    align-items: center;
 }
 .social-icon ul li {
     list-style: none;
     border: 1px solid grey;
     margin-left: 10px;
     padding: 5px 10px;
+    color: #5ba515;
+    /* color: grey; */
 }
 .social-icon ul {
     display: flex;
