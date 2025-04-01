@@ -20,7 +20,7 @@ h6, .h6 {
   color: #051922;
 }
 span {
-    color: #5ba515;
+    color: #499a12;
 }
 .row {
     display: flex;
@@ -84,6 +84,7 @@ span {
     padding: 0px 20px;
 }
 .main-menu ul li a {
+    letter-spacing: 1px;
     color: white;
     font-size: 14.5px;
 }
@@ -288,7 +289,7 @@ p {
     font-weight: 600;
 }
 .category {
-    border: 5px solid #5ba515;
+    border: 5px solid #499a12;
     margin: 10px;
     min-width: 150px;
     max-height: 200px;
@@ -298,13 +299,13 @@ p {
     font-size: 60px;
     font-weight: 700;
     color: #1b2124;
-    color: #5ba515;
+    color: #499a12;
 }
 .shop-now a,
 .show-more a
 {
     display: inline-block;
-    background-color: #5ba515;
+    background-color: #499a12;
     color: white;
     padding: 10px 20px;
     font-weight: 500;
@@ -321,7 +322,7 @@ p {
     text-align: center;
     padding: 50px 10px;
     /* trying out some design */
-    border-bottom: 2px solid #5ba515;
+    border-bottom: 2px solid #499a12;
     margin-bottom: 50px;
 }
 .blog-section {
