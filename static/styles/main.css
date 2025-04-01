@@ -19,7 +19,7 @@ h6, .h6 {
   color: #051922;
 }
 span {
-    color: #5ba515;
+    color: #499a12;
 }
 .row {
     display: flex;
@@ -51,6 +51,7 @@ span {
     background-color: transparent; /* Initially transparent */
     transition: background-color 0.3s ease-in-out;
     z-index: 10000;
+
 }
 .main-menu-wrap  {
     display: flex;
@@ -69,6 +70,7 @@ span {
     list-style-type: none;
 }
 .main-menu ul li a {
+    letter-spacing: 1px;
     color: white;
     font-size: 14.5px;
 }
@@ -122,7 +124,7 @@ a {
     color: white;
 }
 .hero-text p.subtitle {
-    color: #5ba515;
+    color: #499a12;
     font-weight: 700;
     font-size: 15px;
     letter-spacing: 6px;
@@ -130,7 +132,7 @@ a {
 }
 .boxed-btn {
     display: inline-block;
-    background-color: #5ba515;
+    background-color: #499a12;
     color: white;
     padding: 10px 20px;
     font-weight: 500;
@@ -138,7 +140,7 @@ a {
 }
 .bordered-btn {
     display: inline-block;
-    border: 2px solid #5ba515;
+    border: 2px solid #499a12;
     color: white;
     padding: 8px 20px;
     font-weight: 500;
@@ -200,7 +202,7 @@ a {
     height: 500px;
 }
 .category {
-    border: 5px solid #5ba515;
+    border: 5px solid #499a12;
     margin: 10px;
     min-width: 150px;
     max-height: 200px;
@@ -210,13 +212,13 @@ a {
     font-size: 60px;
     font-weight: 700;
     color: #1b2124;
-    color: #5ba515;
+    color: #499a12;
 }
 .shop-now a,
 .show-more a
 {
     display: inline-block;
-    background-color: #5ba515;
+    background-color: #499a12;
     color: white;
     padding: 10px 20px;
     font-weight: 500;
@@ -233,7 +235,7 @@ a {
     text-align: center;
     padding: 50px 10px;
     /* trying out some design */
-    border-bottom: 2px solid #5ba515;
+    border-bottom: 2px solid #499a12;
     margin-bottom: 50px;
 }
 .blog-section {
@@ -281,7 +283,7 @@ a {
     padding: 15px 50px;
     border-radius: 50px;
     margin-bottom: 40px;
-    border-color: #5ba515;
+    border-color: #499a12;
     outline: none;
 }
 
@@ -292,7 +294,7 @@ a {
     padding: 10px 15px;
     border: 0;
     color: white;
-    background-color: #5ba515;
+    background-color: #499a12;
 }
 
 
