@@ -1,0 +1,71 @@
+/* checkout */
+.billing-address h4 {
+    font-size: 15px;
+    padding: 20px 20px 20px 20px;
+    background-color: rgb(191, 202, 202); /* look for a matching bg color*/
+}
+.billing-address {
+    width: 60%;
+    margin-top: 100px;
+    margin-right: 20px;
+}
+.billing-address-box {
+    border: 1px solid lightgray;
+}
+form {
+    text-align: center;
+}
+textarea, input {
+    font-family: 'Poppins';
+    font-weight: 400;
+    color: black;
+    padding: 15px 10px 15px 0px;
+    margin: 20px 10px;
+    width: 80%;
+    border-color: lightgray;
+    border-radius: 0px;
+    border: 0;
+    border-bottom: 1px solid lightgray;
+    outline: none;
+}
+.order-details {
+    margin-top: 100px;
+}
+.order-details .order-hdr {
+    display: block;
+    font-size: 14px;
+    padding: 20px 20px 20px 20px;
+    background-color: rgb(191, 202, 202); /* look for a matching bg color*/
+}
+#submit-btn {
+    display: inline-block;
+    /* background-color: #5ba515; */
+    background-color: green;
+    color: white;
+    padding: 10px 25px;
+    font-weight: 300;
+    border-radius: 40px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 10px;
+    border: 0;
+    width: 30%;
+    font-size: 18px;
+}
+/* order details */
+.order-details {
+    margin-left: 25px;
+}
+.order-details table {
+    border-collapse: collapse;
+}
+.order-details th {
+    padding: 15px 15px;
+    background-color: rgb(191, 202, 202);
+    border: 1px solid lightgray;
+}
+.order-details td {
+    padding: 10px 15px;
+    margin-top: 10px;
+    border: 1px solid lightgray;
+}
